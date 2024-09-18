@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--========================================================================================================================-->
+<!--[HTML & HEAD]-->                                                                    <!--[This is the column for Comments]-->
+
+<head>
+    <meta charset="UTF-8">                                                              <!--[Meta Tags]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">                                                                 
+    <meta lang="en"/>
+    <meta name="description" content="HTML Bookshop"/>
+    <meta name="keywords" content="HTML, Bookshop"/>
+    <meta name="author" content="Lithan"/>
+
+    <title>Books</title>                                                <!--[Web Page Title]-->
+
+    <link rel="stylesheet" href="Stylesheet.css">                                       <!--[LINK: CSS]-->
+    <script src="Scripts.js"></script>                                                  <!--[LINK: JS]-->
+
+</head>
+<!--========================================================================================================================-->
+<body>
+<!--========================================================================================================================-->
+<!--[HEADER]-->                                                                         <!--[This is the column for Comments]-->
+
+<div class="PageHeader">                                                                <!--[Page Header - Nav Bar]-->
+        
+    <div class="NavContainer AlignLeft">                                            <!--[NavBar: Left]-->
+        <div class="HomeButton" onclick="location.href='Index.html'">
+            
+                <img class="Logo_Header" src="../assets/Silent Library - Header Logo.png" alt="Silent Library Logo (Header)">
+        </div>
+
+        <div class="SearchBar">
+            <form action="Search-Query.html">
+            <input type="text" placeholder="Search..." name="search">
+            <button type=".Searchbar Button"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <div class="NavBar AlignRight Under-850px_Hide">                                                 <!--[NavBar: Right]-->
+
+        <div class="NavBar NavLink Under-850px_Hide" onclick="location.href='About.html'">
+            <a class="LinkText" href="About.html">About</a></div>
+        <div class="NavBar NavLink Under-850px_Hide" onclick="location.href='Books.html'">
+            <a class="LinkText" href="Books.html">Books</a></div>
+        <div class="NavBar NavLink Under-850px_Hide" onclick="location.href='Events.html'">
+            <a class="LinkText" href="Events.html">Events &<br>Promotions</a></div>
+        <div class="NavBar NavLink Under-850px_Hide" onclick="location.href='Contact.html'">
+            <a class="LinkText" href="Contact.html">Contact<br>Us</a></div>
+        <div class="NavBar NavLink Under-850px_Hide" onclick="location.href='Login.html'">
+            <a class="LinkText" href="Login.html">Login/<br>Register</a></div>
+    </div>
+
+    <div class="NavBar AlignRight Above-850px_Hide">
+    <div class="NavBar NavLink Icons" onclick=showSideBar()>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></div>
+    </div>
+
+    <div class="SideBar">                                                <!--[NavBar: SideBar]-->
+        <div class="SideBarLink CloseButton Icons" onclick=hideSideBar()>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></div>
+        <div class="SideBarLink" onclick="location.href='About.html'">
+            <a class="LinkText" href="About.html">About</a></div>
+        <div class="SideBarLink" onclick="location.href='Books.html'">
+            <a class="LinkText" href="Books.html">Books</a></div>
+        <div class="SideBarLink" onclick="location.href='Events.html'">
+            <a class="LinkText" href="Events.html">Events &<br>Promotions</a></div>
+        <div class="SideBarLink" onclick="location.href='Contact.html'">
+            <a class="LinkText" href="Contact.html">Contact<br>Us</a></div>
+        <div class="SideBarLink" onclick="location.href='Login.html'">
+            <a class="LinkText" href="Login.html">Login/<br>Register</a></div>
+    </div>
+</div>
+    
+
+<!--========================================================================================================================-->
+<!--[FILLER]-->                                                                          <!--[This is the column for Comments]-->
+
+    <h1 class="Header_Large TextAlign-Center">Books</h1>
+    </div>
+<!--========================================================================================================================-->
+</body>
+</html>

@@ -1,0 +1,604 @@
+/*==================================================================================================================================*/
+
+    /*[Silent Library Stylesheet]*/                                                     /*[This is the column for Comments]*/
+
+        /*[Date:        2024-09-16]*/
+        /*[Build:       v0.1.1-alpha]*/
+
+/*==================================================================================================================================*/
+/*[DUMMY TEST CATEGORIES]*/                                                             /*[This is the column for Comments]*/
+
+    
+
+    .p1{                                                                                /*[Paragraph 1: Style]*/
+        font-family: "Bahnschrift", Helvetica, sans-serif;
+        font-size: medium;
+    }
+    .Image_Display{
+        display: block;
+        width: 80%;
+        margin: auto;
+        opacity: 80%;
+    }
+
+    .Container_1{                                                                       /*[A Test Container]*/
+        width: 90%;
+        margin: auto;
+        height: 100%;
+        border: 2px solid red;
+    }
+
+/*==================================================================================================================================*/
+/*[CONTENT HEADERS - UNIVERSAL]*/                                                       /*[This is the column for Comments]*/
+
+    /*[Screen Styles: Formatting]*/                                                     /*[Mobile Styles: 540px and under]*/
+    @media only screen and (min-width: 576px){                                          /*[Tablet Styles: 576px - 1200px]*/
+        .Container_1{
+            width: 540px;
+            margin: auto;
+            height: 100%;
+            border: 2px solid red;
+        }
+    }
+    @media only screen and (min-width: 1200px){                                         /*[Desktop Styles: 1200px and above]*/
+        .Container_1{
+            width: 1140px;
+            margin: auto;
+            height: 100%;
+            border: 2px solid red;
+        }
+    }
+
+    *{                                                                                  /*[Removes Browser margin & padding]*/
+        margin: 0px;
+        padding: 0px;
+    }
+    body{                                                                               /*[Universal Body Settings]*/
+        min-height: 100vh;
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: linear-gradient(white, #dee9f9);
+    }
+
+    @font-face {                                                                        /*[Import: "Bahnschrift Font"]*/
+        font-family: "Bahnschrift";
+        src: url(../assets/BAHNSCHRIFT.ttf);
+    }
+
+    .Background_Image{                                                                  /*[Background Image]*/
+        display: inline-block;
+        background-image: url("/assets/Ohara In Autumn.jpg");
+        
+        margin-left: auto;
+        margin-right: auto;
+        object-fit: fill;
+        position: fixed;
+        opacity: 90%;
+        z-index: -1;
+    }
+
+    .Header_Large{                                                                      /*[Text Header]*/
+        font-family: "Bahnschrift", Helvetica, sans-serif;
+        text-transform: none;
+        font-size: 50px;
+        word-spacing: 1.3rem;
+        color: black;
+        text-decoration: none;
+        padding: 10px;
+    }
+            .TextAlign-Left{
+                margin-left: 10%;
+                margin-right: auto;
+                text-align: left;
+            }
+            .TextAlign-Center{
+                text-align: center;
+            }
+            .TextAlign-Right{
+                margin-left: auto;
+                margin-right: 10%;
+                text-align: right;
+            }
+
+    .Logo_Small{                                                                        /*[Logo: Small]*/
+        display: block;
+        width: 400px;
+        object-fit: cover;
+            margin-left: auto;
+            margin-right: 100px;
+            align-items: right;
+    }
+
+    .Logo_Large{                                                                        /*[Logo: Small]*/
+        position: relative;
+        display: flex;
+        height: 300px;
+        margin-left: 90%;
+    }
+
+    .AlignRight{margin-left: auto;}                                                     /*[Align: Right]*/
+    .AlignLeft{margin-right: auto;}                                                     /*[Align: Left]*/
+    
+
+
+/*========================================================================================================================*/
+/*[HEADER BAR]*/                                                                        /*[This is the column for Comments]*/
+
+    .PageHeader{
+        /*[Text Properties]*/
+        color: white;
+        /*[Box Properties]*/
+        background-color: #1c1c32;
+        box-shadow: -10px 0 10px #000000;
+        /*[Position Properties]*/
+        display: flex;
+        position: relative;
+    }
+
+    .NavContainer{
+        /*[Text Properties]*/
+        font-family: "Bahnschrift", Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        text-transform: none;
+        text-decoration: none;
+        /*[Box Properties]*/
+        padding: none;
+        /*[Position Properties]*/
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .HomeButton{
+        /*[Text Properties]*/
+        font-family: "Bahnschrift", Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        text-transform: none;
+        text-decoration: none;
+        /*[Box Properties]*/
+        height: inherit;
+    }
+    .HomeButton:hover{
+        /*[Text Properties]*/
+        /*[Box Properties]*/
+        background-color: #3b3b56;
+        height: 100%;
+        /*[Transition Properties]*/
+        cursor: pointer;
+        transition:
+            all 0.3s                                                                    /*[All Elements, Transition Duration]*/
+            ease 0s;                                                                    /*[Delay Time]*/
+    }
+    .Logo_Header{
+        margin-right: auto;
+        height: 30px;
+        align-items: center;
+        object-fit: cover;
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        vertical-align: middle;
+        justify-content: flex-start;
+        cursor: pointer;
+    }
+
+    .SearchBar{
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-right: auto;
+        float:left
+    }
+    .SearchBar Input[type=text]{
+        padding: 6px;
+        margin-top: 8px;
+        font-size: 17px;
+        border: none;
+    }
+    .SearchBar Button {
+        float: right;
+        padding: 6px 10px;
+        margin-top: 8px;
+        margin-right: 16px;
+        background: #ddd;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .Icons path{
+        fill: white;
+    }
+
+    .NavBar{
+        /*[Text Properties]*/
+        font-family: "Bahnschrift", Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        text-transform: none;
+        text-decoration: none;
+        /*[Box Properties]*/
+        padding: none;
+        /*[Position Properties]*/
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+            .NavBar:hover{
+                /*[Text Properties]*/
+                /*[Box Properties]*/
+                background-color: #3b3b56;
+                height: 100%;
+                /*[Transition Properties]*/
+                transition:
+                    all 0.3s                                                                    /*[All Elements, Transition Duration]*/
+                    ease 0s;                                                                    /*[Delay Time]*/
+            }
+                    .NavBar .NavLink{
+                        /*[Text Properties]*/
+                        font-family: "Bahnschrift", Helvetica, sans-serif;
+                        font-weight: 400;
+                        font-size: 15px;
+                        color: white;
+                        text-transform: none;
+                        text-decoration: none;
+                        /*[Box Properties]*/
+                        background-color: inherit;
+                        height: 50px;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        padding: none;
+                        /*[Position Properties]*/
+                        display: flex;
+                        align-items: center;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: flex-end;
+                        
+                    }
+                            .NavBar .NavLink:hover{
+                                /*[Text Properties]*/
+                                color: #000000;
+                                /*[Box Properties]*/
+                                background-color: #cacad4;
+                                margin-left: 10px;
+                                margin-right: 10px;
+                                padding-right: 10px;
+                                padding-left: 10px;
+                                border-radius: 2px;
+                                /*[Transition Properties]*/
+                                cursor: pointer;
+                                transition:
+                                    all 0.3s                                                                    /*[All Elements, Transition Duration]*/
+                                    ease 0s;                                                                    /*[Delay Time]*/
+                            }
+
+    .LinkText{
+        /*[Text Properties]*/
+        font-family: "Bahnschrift", Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        color: white;
+        text-transform: none;
+        text-decoration: none;
+        /*[Box Properties]*/
+        vertical-align: center;
+        margin: auto;
+    }
+            .LinkText:hover{
+                /*[Text Properties]*/
+                color: teal;
+                /*[Transition Properties]*/
+                cursor: pointer;
+                transition:
+                    all 0.3s                                                                    /*[All Elements, Transition Duration]*/
+                    ease 0s;                                                                    /*[Delay Time]*/
+            }
+
+    
+    .SideBar{
+        /*[Color Properties]*/
+        background-color: #3b3b567d;
+        backdrop-filter: blur(20px);
+        /*[Box Properties]*/
+        top: 0;
+        right: 0;
+        height: inherit;
+        padding-top: 10px;
+        padding-bottom: 50px;
+        padding-left: 30px;
+        width: 250px;
+        box-shadow: -10px 0 10px #000000;
+        /*[Position Properties]*/
+        position: fixed;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        z-index: 999;
+    }
+            .SideBar:hover{
+                /*[Box Properties]*/
+                background-color: #1c1c32c1;
+                backdrop-filter: blur(20px);
+                /*[Transition Properties]*/
+                transition:
+                    all 0.3s                                                                    /*[All Elements, Transition Duration]*/
+                    ease 0s;                                                                    /*[Delay Time]*/
+            }
+
+    .SideBarLink{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        height: inherit;
+        width: inherit;
+        align-items: flex-end;
+        justify-content: flex-end;
+        cursor: pointer;
+    }
+            .SideBarLink:hover{
+                /*[Text Properties]*/
+                color: #000000;
+                /*[Box Properties]*/
+                background-color: #cacad4;
+                margin-left: -20px;
+                margin-right: 10px;
+                padding-right: 10px;
+                padding-left: 20px;
+                border-radius: 2px;
+                /*[Transition Properties]*/
+                cursor: pointer;
+                transition:
+                    all 0.3s                                                                    /*[All Elements, Transition Duration]*/
+                    ease 0s;                                                                    /*[Delay Time]*/
+            }
+            .SideBarLink .CloseButton{
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-right: 40px;
+                
+                height: inherit;
+                width: inherit;
+                display: flex;
+                align-items: right;
+                justify-content: right;
+                cursor: pointer;
+            }
+                    .SideBarLink .CloseButton:hover{
+                        /*[Text Properties]*/
+                        color: #000000;
+                        /*[Box Properties]*/
+                        background-color: #cacad4;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                        margin-left: -20px;
+                        margin-right: 10px;
+                        padding-right: 10px;
+                        padding-left: 20px;
+                        border-radius: 2px;
+                        /*[Transition Properties]*/
+                        cursor: pointer;
+                        transition:
+                            all 0.3s                                                                    /*[All Elements, Transition Duration]*/
+                            ease 0s;                                                                    /*[Delay Time]*/
+                    }
+
+    @media only screen and (max-width: 850px){
+        .Under-850px_Hide{
+            display: none;
+        }
+    }
+    @media only screen and (min-width: 850px){
+        .Above-850px_Hide{
+            display: none;
+        }
+    }
+    @media only screen and (max-width: 540px){
+        .SideBar{
+            width: 100%;
+        }
+    }
+
+/*==================================================================================================================================*/
+/*[GRID CONTENT]*/                                                                      /*[This is the column for Comments]*/
+
+    .FlexGrid_Layout{
+        /*[Text Properties]*/
+        font-family: "Bahnschrift", Helvetica, sans-serif;
+        word-spacing: 0.2rem;
+        /*[Color Properties]*/
+        color: black;
+        /*[Box Properties]*/
+        padding: 10px;
+        width: 80%;
+        margin: auto;
+        /*[Positioning Properties]*/
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    .GridHeader_Large{                                                                      /*[Text Header]*/
+        /*[Text Properties]*/
+        font-family: "Bahnschrift", Helvetica, sans-serif;
+        word-spacing: 0.2rem;
+        font-size: 30px;
+        text-align: center;
+        text-transform: none;
+        text-decoration: none;
+        /*[Color Properties]*/
+        color: black;
+        /*[Box Properties]*/
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: auto;
+        /*[Positioning Properties]*/
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+            }
+
+    .Column{flex-direction: column;}
+    .Row{flex-direction: column;}
+
+    .GridContainer_Hover{
+        /*[Text Properties]*/
+        text-align: left;
+        /*[Box Properties]*/
+        min-height: 150px;
+        min-width: 300px;
+        width: inherit;
+        /*[Positioning Properties]*/
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+    }       
+            .GridContainer_Hover:hover{
+                /*[Box Properties]*/
+                padding-top: 0px;
+                padding-bottom: 0px;
+                padding-left: 15px;
+                padding-right: 15px;
+                background-color: whitesmoke;
+                border: 2px solid #3b3b56;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+    .GridContainer_Static{
+        /*[Text Properties]*/
+        text-align: left;
+        /*[Box Properties]*/
+        min-height: 150px;
+        min-width: 300px;
+        width: inherit;
+        /*[Positioning Properties]*/
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+    }       
+
+
+    .Grid_Header{                                                                      /*[Header Small: Style]*/
+        font-family: "Bahnschrift", Helvetica, sans-serif;
+        font-size: 25px;
+        display: inline-block;
+        margin-right: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .Grid_Image{
+        /*[Positioning Properties]*/
+        display: inline;
+        /*[Image Properties]*/
+        max-width: 100px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .Grid_Text{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: inline-block;
+        width: 100%;
+    }
+
+/*==================================================================================================================================*/
+/*[BOOK DETAILS]*/                                                                      /*[This is the column for Comments]*/
+
+    .BookDetails_Layout{
+        /*[Text Properties]*/
+        font-family: "Bahnschrift", Helvetica, sans-serif;
+        word-spacing: 0.5rem;
+        /*[Color Properties]*/
+        color: black;
+        /*[Box Properties]*/
+        padding: 10px;
+        width: 80%;
+        margin: auto;
+        /*[Positioning Properties]*/
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+            .Book_Details{
+                flex: 2;
+            }
+            .Reviews{
+                flex: 1;
+            }
+
+
+/*========================================================================================================================*/
+/*[TABLE]*/                                                                              /*[This is the column for Comments]*/
+
+    .Book_Thumbnail {                                                                       /*[Book Thumbnail: Style]*/
+        height: 70px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        object-fit: contain;
+    }
+
+    #Top-Rated_Books {                                                                      /*[Top-Rated Books: Table Style]*/
+        /*[Text Properties]*/
+        font-family: Arial, Helvetica, sans-serif;
+        /*[Box Properties]*/
+        border-collapse: collapse;
+        padding: 20px;  
+    }
+
+            #Top-Rated_Books tr:nth-child(even){background-color: #f2f2f2;}
+            #Top-Rated_Books tr:hover {
+                /*[Text Properties]*/
+                color: #2e6464;
+                /*[Transition Properties]*/
+                cursor: pointer;
+                background-color: #c0d4d4;
+                transition:
+                    all 0.3s                                                                    /*[All Elements, Transition Duration]*/
+                    ease 0s;                                                                    /*[Delay Time]*/
+            }
+
+    #Top-Rated_Books th {                                                                   /*[Top-Rated Books: Table Header]*/
+        height: 50px;
+        border: 1px solid #ddd;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+        vertical-align: text-top;
+        background-color: #555364;
+        color: white;
+    }
+    #Top-Rated_Books td {                                                               /*[Top-Rated Books: Table Data]*/
+        border: 1px solid #ddd;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+    }
+
+/*========================================================================================================================*/
+/*[FOOTER BAR]*/                                                                        /*[This is the column for Comments]*/
+
+    .PageFooter{
+        /*[Text Properties]*/
+        color: white;
+        /*[Box Properties]*/
+        height: 100px;
+        background-color: #1c1c32;
+        box-shadow: -10px 0 10px #000000;
+        /*[Position Properties]*/
+        display: flex;
+        position: relative;
+    }
+    .Footer_Table{
+
+    }
+
+/*========================================================================================================================*/

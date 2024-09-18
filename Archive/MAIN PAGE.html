@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home - Silent Library</title>                                                        <!--[Browser Tab Title]-->
+    
+        <meta charset="utf-8"/>                                                                 <!--[Meta Tags]-->
+        <meta lang="en"/>
+        <meta name="description" content="HTML Bookshop"/>
+        <meta name="keywords" content="HTML, Bookshop"/>
+        <meta name="author" content="Lithan"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="stylesheet" href="Stylesheet (Silent Library).css"/>                             <!--[Link to CSS Stylesheets]-->
+    
+</head>
+
+<body>
+<!--========================================================================================================================-->
+<!--[PAGE HEADER]-->
+
+    <!--<div class="Page_Header-Box"></div>-->                                                         <!--[Page Header Container]-->
+
+    <div class="Page_Header">                                                                   <!--[Page Header Bar]-->
+        <div class="Page_Header-Box"></div>
+        <div class="Page_Header" id="Page_Header-About">
+            <a href="About.html">About</a></div>
+        <div class="Page_Header" id="Page_Header-Books">
+            <a href="Books.html">Books</a></div>
+        <div class="Page_Header" id="Page_Header-Events">
+            <a href="Events.html">Events &<br>Promotions</a></div>
+        <div class="Page_Header" id="Page_Header-Contact">
+            <a href="Contact.html">Contact<br>Us</a></div>
+        <div class="Page_Header" id="Page_Header-Login">
+            <a href="Login.html">Login/<br>Register</a></div>
+    </div>
+
+<!--========================================================================================================================-->
+<!--[PAGE FOOTER]-->
+
+    <footer class="site-footer Page_Footer-Box">                                                               <!--[Page Footer Container]-->
+    </div>
+
+<!--========================================================================================================================-->
+<!--[LANDING PAGE BANNER]-->
+
+    <div class="Landing-Page_Banner">                                                           <!--[Landing Page Banner]-->
+        <div class="Landing-Page_Banner_Text">
+            <p id="Landing-Page_Banner_Title">WELCOME TO</p>
+            <P id="Landing-Page_Banner_Subtitle">The Best Collection of Books</P>
+        </div>
+            <img id="Landing-Page_Banner_Logo" src="../Assets/Silent Library Logo.jpg" alt="Silent Library Logo"></div>
+    </div>
+
+    <h2 class="Page_Header"><a href="books.html">Books</a></h2>                                 <!--[Header Bar]-->
+  
+
+
+     <h1 class="Header_Large">WELCOME TO</h1>
+     <p class="p1">Find what you need</p>
+
+    <img class="Logo_Small" src="../Assets/Silent Library Logo.jpg" alt="Silent Library Logo">
+        
+
+
+
+<!--========================================================================================================================-->
+<!--[GRID CONTENT]-->
+
+    <div class="Container-3col">
+        <div class="Text-3col">1</div>
+            <h3 class="Header_Small">A h3-class Title</h3>
+            <img class="Img-3col" src="../Assets/The Lord of the Rings Book 3 - The Return of the King.jpg" alt="The Lord of the Rings Book 3 - The Return of the King.jpg">
+            <p class="Text_Standard">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur est maxime mollitia eius, doloremque iste distinctio necessitatibus fugit fuga quisquam quas vitae impedit laborum dolore enim ex nihil, quibusdam voluptatibus. Voluptates, eum quia deserunt adipisci fuga esse odit a ducimus autem perspiciatis dolore, impedit eveniet ut, enim ex nam corporis.
+            </p>
+        <div class="Text-3col">2</div>
+        <div class="Text-3col">3</div>
+    </div>
+
+
+<!--========================================================================================================================-->
+<!--[TABLE]-->
+
+        <table id="Top-Rated_Books">    <!--[TABLE: Top-Rated Books]-->
+
+            <h2 class="Header_Small">Top-Rated Books</h2>
+            <p class="p1">Search & Filter our most popular offerings</p>
+            <br>
+            <p class="p1">Click the button to sort the table alphabetically, by name:</p>
+            <p><button onclick="sortTable()">Text</button></p>
+        
+            <tr>    <!--[Header Row]-->
+                <th>#</th>                                                                      <!--[#]-->
+                <th colspan="2">
+                    <button class="Button_Default" onclick="sortTable()">
+                        Sort by Book Name &#x25B3; </button></th>                                 <!--[Image + Column 1 Header]-->
+                <th>Sort by<br>Rating &#x25BC;</th>                                             <!--[Column 2 Header]-->
+                <th>Sort by<br>Borrowed</th>                                                    <!--[Column 3 Header]-->
+                <th>Sort by<br>Author</th>                                                      <!--[Column 4 Header]-->
+                <th>Sort by<br>Category</th>                                                    <!--[Column 5 Header]-->
+            </tr>
+
+            <tr>    <!--[Row 1]-->
+                <td>1</td>                                                                      <!--[#]-->
+                <td>    <a href="Book Details - 1.html">                                        <!--[Book Thumbnail]-->
+                            <img    class="Book_Thumbnail"
+                                    src="../Assets/The Lord of the Rings Book 3 - The Return of the King.jpg"
+                                    alt="The Lord of the Rings Book 3 - The Return of the King">
+                        </a></td>
+                <td>    <a href="Book Details - 1.html">                                        <!--[Column 1 Data]-->
+                            The Return of the King<br>(The Lord of the Rings Book 3)
+                        </a></td>
+                <td>4.9 &#x2605;</td>                                                           <!--[Column 2 Data]-->
+                <td>10,562</td>                                                                 <!--[Column 3 Data]-->
+                <td>J.R.R. Tolkien</td>                                                         <!--[Column 4 Data]-->
+                <td>Fantasy</td>                                                                <!--[Column 5 Data]-->
+            </tr>
+
+            <tr>    <!--[Row 2]-->
+                <td>2</td>                                                                      <!--[#]-->
+                <td>    <a href="Book Details - 2.html">                                        <!--[Book Thumbnail]-->
+                            <img    class="Book_Thumbnail"
+                                    src="../Assets/A Song of Ice and Fire Book 1 - A Game of Thrones.jpg"
+                                    alt="A Song of Ice and Fire Book 1 - A Game of Thrones">
+                        </a></td>
+                <td>    <a href="Book Details - 2.html">                                        <!--[Column 1 Data]-->
+                            A Game of Thrones<br>(A Song of Ice and Fire, Book 1)
+                        </a></td>
+                <td>4.7 &#x2605;</td>                                                           <!--[Column 2 Data]-->
+                <td>14,636</td>                                                                 <!--[Column 3 Data]-->
+                <td>George R.R. Martin</td>                                                         <!--[Column 4 Data]-->
+                <td>Fantasy</td>                                                                <!--[Column 5 Data]-->
+            </tr>
+
+            <tr>    <!--[Row 3]-->
+                <td>3</td>                                                                      <!--[#]-->
+                <td>    <a href="Book Details - 3.html">                                        <!--[Book Thumbnail]-->
+                            <img    class="Book_Thumbnail"
+                                    src="../Assets/The Hunger Games Trilogy Book 1 - The Hunger Games.jpg"
+                                    alt="The Hunger Games Trilogy Book 1 - The Hunger Games">
+                        </a></td>
+                <td>    <a href="Book Details - 3.html">                                        <!--[Column 1 Data]-->
+                            The Hunger Games<br>(Hunger Games Trilogy, Book 1)
+                        </a></td>
+                <td>4.7 &#x2605;</td>                                                           <!--[Column 2 Data]-->
+                <td>9,230</td>                                                                  <!--[Column 3 Data]-->
+                <td>Suzanne Collins</td>                                                        <!--[Column 4 Data]-->
+                <td>Fantasy</td>                                                                <!--[Column 5 Data]-->
+            </tr>
+
+            <tr>    <!--[Row 4]-->
+                <td>4</td>                                                                      <!--[#]-->
+                <td>    <a href="Book Details - 4.html">                                        <!--[Book Thumbnail]-->
+                            <img    class="Book_Thumbnail"
+                                    src="../Assets/To Kill a Mockingbird.jpg"
+                                    alt="To Kill a Mockingbird">
+                        </a></td>
+                <td>    <a href="Book Details - 4.html">                                        <!--[Column 1 Data]-->
+                            To Kill a Mockingbird
+                        </a></td>
+                <td>4.7 &#x2605;</td>                                                           <!--[Column 2 Data]-->
+                <td>7,045</td>                                                                  <!--[Column 3 Data]-->
+                <td>Harper Lee</td>                                                             <!--[Column 4 Data]-->
+                <td>Adult Fiction</td>                                                          <!--[Column 5 Data]-->
+            </tr>
+
+            <tr>    <!--[Row 5]-->
+                <td>5</td>                                                                      <!--[#]-->
+                <td>    <a href="Book Details - 5.html">                                        <!--[Book Thumbnail]-->
+                            <img    class="Book_Thumbnail"
+                                    src="../Assets/1984 - 75th Anniversary.jpg"
+                                    alt="1984 - 75th Anniversary">
+                        </a></td>
+                <td>    <a href="Book Details - 5.html">                                        <!--[Column 1 Data]-->
+                            1984: 75th Anniversary
+                        </a></td>
+                <td>4.6 &#x2605;</td>                                                           <!--[Column 2 Data]-->
+                <td>5,745</td>                                                                  <!--[Column 3 Data]-->
+                <td>George Orwell</td>                                                          <!--[Column 4 Data]-->
+                <td>Adult Fiction</td>                                                          <!--[Column 5 Data]-->
+            </tr>
+          </table>
+
+          <a href="Book Details - 1.html">Lol</a>
+
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!--========================================================================================================================-->
+
+    <!--[SILENT LIBRARY HTML - INDEX]-->                                                <!--[This is the column for Comments]-->
+        <!--[Date:      2024-09-16]-->
+        <!--[Build:     v0.1.1-alpha]-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!--========================================================================================================================-->
+<!--[HTML & HEAD]-->                                                                    <!--[This is the column for Comments]-->
+
+<head>
+    <meta charset="UTF-8">                                                              <!--[Meta Tags]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">                                                                 
+    <meta lang="en"/>
+    <meta name="description" content="HTML Bookshop"/>
+    <meta name="keywords" content="HTML, Bookshop"/>
+    <meta name="author" content="Lithan"/>
+
+    <title>Silent Library - Home</title>                                                <!--[Web Page Title]-->
+
+    <link rel="stylesheet" href="Stylesheet.css">                                       <!--[LINK: CSS]-->
+    <script src="Scripts.js"></script>                                                  <!--[LINK: JS]-->
+
+</head>
+<!--========================================================================================================================-->
+<body>
+<!--========================================================================================================================-->
+<!--[HEADER]-->                                                                         <!--[This is the column for Comments]-->
+
+    <div class="PageHeader">                                                            <!--[Page Header - Nav Bar]-->
+        
+        <div class="NavContainer AlignLeft">                                            <!--[NavBar: Left]-->
+            <div class="HomeButton" onclick="location.href='Index.html'">
+                
+                    <img class="Logo_Header" src="../assets/Silent Library - Header Logo.png" alt="Silent Library Logo (Header)">
+            </div>
+
+            <div class="SearchBar">
+                <form action="Search-Query.html">
+                <input type="text" placeholder="Search..." name="search">
+                <button type=".Searchbar Button"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="NavBar AlignRight Under-850px_Hide">                                                 <!--[NavBar: Right]-->
+
+            <div class="NavBar NavLink Under-850px_Hide" onclick="location.href='About.html'">
+                <a class="LinkText" href="About.html">About</a></div>
+            <div class="NavBar NavLink Under-850px_Hide" onclick="location.href='Books.html'">
+                <a class="LinkText" href="Books.html">Books</a></div>
+            <div class="NavBar NavLink Under-850px_Hide" onclick="location.href='Events.html'">
+                <a class="LinkText" href="Events.html">Events &<br>Promotions</a></div>
+            <div class="NavBar NavLink Under-850px_Hide" onclick="location.href='Contact.html'">
+                <a class="LinkText" href="Contact.html">Contact<br>Us</a></div>
+            <div class="NavBar NavLink Under-850px_Hide" onclick="location.href='Login.html'">
+                <a class="LinkText" href="Login.html">Login/<br>Register</a></div>
+        </div>
+
+        <div class="NavBar AlignRight Above-850px_Hide">
+        <div class="NavBar NavLink Icons" onclick=showSideBar()>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></div>
+        </div>
+
+        <div class="SideBar">                                                <!--[NavBar: SideBar]-->
+            <div class="SideBarLink CloseButton Icons" onclick=hideSideBar()>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></div>
+            <div class="SideBarLink" onclick="location.href='About.html'">
+                <a class="LinkText" href="About.html">About</a></div>
+            <div class="SideBarLink" onclick="location.href='Books.html'">
+                <a class="LinkText" href="Books.html">Books</a></div>
+            <div class="SideBarLink" onclick="location.href='Events.html'">
+                <a class="LinkText" href="Events.html">Events &<br>Promotions</a></div>
+            <div class="SideBarLink" onclick="location.href='Contact.html'">
+                <a class="LinkText" href="Contact.html">Contact<br>Us</a></div>
+            <div class="SideBarLink" onclick="location.href='Login.html'">
+                <a class="LinkText" href="Login.html">Login/<br>Register</a></div>
+        </div>
+    </div>
+
+<!--========================================================================================================================-->
+<!--[BODY]-->                                                                           <!--[This is the column for Comments]-->
+
+    <div class="FlexGrid_Layout">
+
+        <div class="GridContainer_Static Column">
+            <h2 class="Header_Large">WELCOME TO<br>SILENT LIBRARY</h2>
+        </div>
+
+        <div class="GridContainer_Static Column">
+            <img class="Logo_Large" src="../assets/Silent Library Logo.png" alt="Silent Library Logo">
+        </div>
+    
+    </div>
+
+
+    
+
+    
+
+    
+        <img class="Image_Display" src="../assets/Library - Book Corridor.jpeg" alt="Welcome To Silent Library">
+    
+
+<!--========================================================================================================================-->
+<!--[GRID CONTENT]-->                                                                   <!--[This is the column for Comments]-->
+
+    <h2 class="Header_Large TextAlign-Center">- Top Picks -</h2>
+
+    <div class="FlexGrid_Layout">
+
+        <div class="GridContainer_Hover Column" onclick="location.href='Book Details-2.html'">
+            <h3 class="Grid_Header">A Game of Thrones</h3>
+            <img class="Grid_Image" src="../assets/A Song of Ice and Fire Book 1 - A Game of Thrones.jpg" alt="A Game of Thrones">
+            <p class="Grid_Text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur est maxime mollitia eius, doloremque iste distinctio necessitatibus fugit fuga quisquam quas vitae impedit laborum dolore enim ex nihil, quibusdam voluptatibus. Voluptates, eum quia deserunt adipisci fuga esse odit a ducimus autem perspiciatis dolore, impedit eveniet ut, enim ex nam corporis.</p>
+        </div>
+
+        <div class="GridContainer_Hover Column" onclick="location.href='Book Details-1.html'">
+            <h3 class="Grid_Header">The Return of the King</h3>
+            <img class="Grid_Image" src="../assets/The Lord of the Rings Book 3 - The Return of the King.jpg" alt="The Lord of the Rings Book 3 - The Return of the King.jpg">
+            <p class="Grid_Text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur est maxime mollitia eius, doloremque iste distinctio necessitatibus fugit fuga quisquam quas vitae impedit laborum dolore enim ex nihil, quibusdam voluptatibus. Voluptates, eum quia deserunt adipisci fuga esse odit a ducimus autem perspiciatis dolore, impedit eveniet ut, enim ex nam corporis.</p>
+        </div>
+
+        <div class="GridContainer_Hover Column" onclick="location.href='Book Details-3.html'">
+            <h3 class="Grid_Header">The Hunger Games</h3>
+            <img class="Grid_Image" src="../assets/The Hunger Games Trilogy Book 1 - The Hunger Games.jpg" alt="The Hunger Games">
+            <p class="Grid_Text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur est maxime mollitia eius, doloremque iste distinctio necessitatibus fugit fuga quisquam quas vitae impedit laborum dolore enim ex nihil, quibusdam voluptatibus. Voluptates, eum quia deserunt adipisci fuga esse odit a ducimus autem perspiciatis dolore, impedit eveniet ut, enim ex nam corporis.</p>
+        </div>
+
+    </div>
+
+
+
+<!--========================================================================================================================-->
+<!--[TABLE]-->                                                                          <!--[This is the column for Comments]-->
+
+
+<div class="FlexGrid_Layout">
+    <div class="GridContainer_Static Column">
+
+        <h2 class="Grid_Header">Top-Rated Books</h2>
+        <p class="p1">Search & Filter our most popular offerings</p>
+        <br>
+        <p class="p1">Click the button to sort the table alphabetically, by name:</p>
+        <p><button onclick="sortTable()">Text</button></p>
+    
+
+        <table id="Top-Rated_Books">    <!--[TABLE: Top-Rated Books]-->
+            <tr>    <!--[Header Row]-->
+                <th>#</th>                                                                      <!--[#]-->
+                <th colspan="2">Sort by Book Name</th>                                 <!--[Image + Column 1 Header]-->
+                <th>Sort by<br>Rating &#x25BC;</th>                                             <!--[Column 2 Header]-->
+                <th>Sort by<br>Borrowed</th>                                                    <!--[Column 3 Header]-->
+                <th>Sort by<br>Author</th>                                                      <!--[Column 4 Header]-->
+                <th>Sort by<br>Category</th>                                                    <!--[Column 5 Header]-->
+            </tr>
+            <tr onclick="location.href='Book Details-1.html'">    <!--[Row 1]-->
+                <td>1</td>                                                                      <!--[#]-->
+                <td><img class="Book_Thumbnail" src="../assets/The Lord of the Rings Book 3 - The Return of the King.jpg" alt="The Lord of the Rings Book 3 - The Return of the King"></td>
+                <td>The Return of the King<br>(The Lord of the Rings Book 3)</td>
+                <td>4.9 &#x2605;</td>                                                           <!--[Column 2 Data]-->
+                <td>10,562</td>                                                                 <!--[Column 3 Data]-->
+                <td>J.R.R. Tolkien</td>                                                         <!--[Column 4 Data]-->
+                <td>Fantasy</td>                                                                <!--[Column 5 Data]-->
+            </tr>
+            <tr onclick="location.href='Book Details-2.html'">    <!--[Row 2]-->
+                <td>2</td>                                                                      <!--[#]-->
+                <td>                                                                            <!--[Book Thumbnail]-->
+                    <img class="Book_Thumbnail" src="../assets/A Song of Ice and Fire Book 1 - A Game of Thrones.jpg"
+                                    alt="A Song of Ice and Fire Book 1 - A Game of Thrones"></td>
+                <td>A Game of Thrones<br>(A Song of Ice and Fire, Book 1)</td>
+                <td>4.7 &#x2605;</td>                                                           <!--[Column 2 Data]-->
+                <td>14,636</td>                                                                 <!--[Column 3 Data]-->
+                <td>George R.R. Martin</td>                                                         <!--[Column 4 Data]-->
+                <td>Fantasy</td>                                                                <!--[Column 5 Data]-->
+            </tr>
+            <tr onclick="location.href='Book Details-3.html'">    <!--[Row 3]-->
+                <td>3</td>                                                                      <!--[#]-->
+                <td> 
+                            <img    class="Book_Thumbnail"
+                                    src="../assets/The Hunger Games Trilogy Book 1 - The Hunger Games.jpg"
+                                    alt="The Hunger Games Trilogy Book 1 - The Hunger Games"></td>
+                <td>
+                            The Hunger Games<br>(Hunger Games Trilogy, Book 1)</td>
+                <td>4.7 &#x2605;</td>                                                           <!--[Column 2 Data]-->
+                <td>9,230</td>                                                                  <!--[Column 3 Data]-->
+                <td>Suzanne Collins</td>                                                        <!--[Column 4 Data]-->
+                <td>Fantasy</td>                                                                <!--[Column 5 Data]-->
+            </tr>
+            <tr onclick="location.href='Book Details-4.html'">    <!--[Row 4]-->
+                <td>4</td>                                                                      <!--[#]-->
+                <td>    
+                            <img    class="Book_Thumbnail"
+                                    src="../assets/To Kill a Mockingbird.jpg"
+                                    alt="To Kill a Mockingbird"></td>
+                <td>
+                            To Kill a Mockingbird
+                        </td>
+                <td>4.7 &#x2605;</td>                                                           <!--[Column 2 Data]-->
+                <td>7,045</td>                                                                  <!--[Column 3 Data]-->
+                <td>Harper Lee</td>                                                             <!--[Column 4 Data]-->
+                <td>Adult Fiction</td>                                                          <!--[Column 5 Data]-->
+            </tr>
+            <tr onclick="location.href='Book Details-5.html'">    <!--[Row 5]-->
+                <td>5</td>                                                                      <!--[#]-->
+                <td>
+                            <img    class="Book_Thumbnail"
+                                    src="../assets/1984 - 75th Anniversary.jpg"
+                                    alt="1984 - 75th Anniversary">
+                        </td>
+                <td>
+                            1984: 75th Anniversary
+                        </td>
+                <td>4.6 &#x2605;</td>                                                           <!--[Column 2 Data]-->
+                <td>5,745</td>                                                                  <!--[Column 3 Data]-->
+                <td>George Orwell</td>                                                          <!--[Column 4 Data]-->
+                <td>Adult Fiction</td>                                                          <!--[Column 5 Data]-->
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!--========================================================================================================================-->
+<!--[FOOTER]-->                                                                         <!--[This is the column for Comments]-->
+
+    <div class="PageFooter">
+        <div class="Footer_Table">
+           <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+            </tr>
+            <tr>
+                <td>one</td>
+                <td>two</td>
+                <td>three</td>
+            </tr>
+        </div>
+
+    </div>
+
+
+
+
+<!--========================================================================================================================-->
+</body>
+</html>

@@ -1,0 +1,329 @@
+/*==================================================================================================================================*/        
+
+        /*[Silent Library Stylesheet.css]*/
+
+/*==================================================================================================================================*/
+/*[LINKS]*/
+
+
+
+/*==================================================================================================================================*/
+/*[TEST Flexbox Alignment]*/
+
+        .Test{
+            display:inline-block;
+            flex-wrap: nowrap;                                                                  /*[FlexBox Compresses With Page]*/
+            flex-direction: row;                                                                /*[FlexBox Distribution: Horizontal]*/
+            justify-content: flex-end;                                                          /*[FlexBox Origin: Right]*/
+            align-items: flex-start;                                                            /*[FlexBox Origin: Top]*/
+            gap: none;
+            }
+
+/*==================================================================================================================================*/
+/*[UNIVERSAL TEXT STYLES]*/
+
+        .Header_Large{
+
+        }
+
+        .Header_Small{
+            /*[Text Properties]*/
+            font-size: 50px;
+            font-weight: bold;
+            text-align: justify;
+            /*[Color Properties]*/
+            color: black;
+        }
+
+        .Text_Standard{
+            /*[Text Properties]*/
+            font-size: medium;
+            text-align: justify;
+            /*[Color Properties]*/
+            color: black;
+        }
+
+/*==================================================================================================================================*/
+/*[PAGE HEADER]*/
+
+        .Page_Header{                                                                           /*[CLASS: Page Header]*/
+            /*[Text Properties]*/
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+            font-weight: bold;
+            text-align: center;
+            text-transform: none;
+            /*[Container Properties]*/
+            top:none;
+            border:none; 
+            border-radius:none; 
+            padding:none;
+            min-height: 50px;
+            min-width: 100px;
+            /*[Container Properties]*/
+            display:grid;
+            flex-wrap: nowrap;                                                                  /*[FlexBox Compresses With Page]*/
+            flex-direction: row;                                                                /*[FlexBox Distribution: Horizontal]*/
+            justify-content: flex-end;                                                          /*[FlexBox Origin: Right]*/
+            align-items: flex-start;                                                            /*[FlexBox Origin: Top]*/
+            gap: none;
+            /*[Positioning Properties]*/
+            position: absolute;
+            z-index: 0;
+        }
+
+        .Page_Header-Box{                                                                       /*[CLASS: Header-Footer Box]*/
+            /*[Color Properties]*/
+            background-color:#555364;
+            color: #fff;
+            /*[Box Properties]*/
+            width: 100%;
+            height: 100px;
+            margin: auto;
+            border: 1px solid black;
+            /*[Positioning Properties]*/
+            position: fixed;
+            display: inline-block;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            grid-area: 1/1;
+            z-index: 0;
+        }
+        
+        .Page_Header-Buttons{
+            /*[Color Properties]*/
+            color: #f2f2f2;
+            /*[Box Properties]*/
+            float: left;
+            display: block;
+            
+            text-align: center;
+            text-decoration: none;
+            font-size: larger;
+            padding: 26px;
+        }
+
+        #Page_Header-About{                                                                     /*[CLASS: Page Header - About]*/
+            /*[Color Properties]*/
+            background-color:#555364;
+            color: #fff;
+            /*[Positioning Properties]*/
+            position: fixed;
+            z-index:1;
+        }
+
+        #Page_Header-Books{                                                                     /*[CLASS: Page Header - Books]*/
+            /*[Color Properties]*/
+            background-color:#555364;
+            color: #fff;
+            /*[Positioning Properties]*/
+            position: relative;
+            z-index:1;
+        }
+
+        #Page_Header-Events{                                                                    /*[CLASS: Page Header - Events]*/
+            /*[Color Properties]*/
+            background-color:#555364;
+            color: #fff;
+            /*[Positioning Properties]*/
+            position: relative;
+            z-index:1;
+        }
+
+        #Page_Header-Contact{                                                                   /*[CLASS: Page Header - Contact]*/
+            /*[Color Properties]*/
+            background-color:#555364;
+            color: #fff;
+            /*[Positioning Properties]*/
+            position: relative;
+            z-index:1;
+        }
+
+        #Page_Header-Login{                                                                     /*[CLASS: Page Header - Login]*/
+            /*[Color Properties]*/
+            background-color:#555364;
+            color: #fff;
+            /*[Positioning Properties]*/
+            position: relative;
+            z-index:1;
+        }
+
+/*==================================================================================================================================*/
+/*[FOOTER]*/
+
+        .Footer{                                                                                /*[CLASS: Site Footer]*/
+
+        }
+
+        .Page_Footer-Box{                                                                       /*[CLASS: Footer Box]*/
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 100px;
+            width: 100%;
+            background-color: red;
+            color: white;
+            text-align: center;
+        }
+
+/*==================================================================================================================================*/
+/*[LANDING PAGE BANNER]*/
+
+        .Landing-Page_Banner{                                                                   /*[CLASS: Landing Page Banner]*/
+            /*[Text Properties]*/
+            font-family: Arial, Helvetica, sans-serif;
+            /*[FlexBox Properties]*/
+            display:flex;
+            flex-wrap: nowrap;                                                                  /*[FlexBox Compresses With Page]*/
+            flex-direction: row;                                                                /*[FlexBox Distribution: Horizontal]*/
+            justify-content: flex-start;                                                        /*[FlexBox Origin: Left]*/
+            align-items: flex-start;                                                            /*[FlexBox Origin: Top]*/
+            gap: 40px;
+        }
+        #Landing-Page_Banner_Title{                                                             /*[ID: Landing Page Banner Title]*/
+            /*[Text Properties]*/
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50px;
+            font-weight: bold;
+            text-align: center;
+        }
+        #Landing-Page_Banner_Subtitle{                                                          /*[ID: Landing Page Banner Subtitle]*/
+            /*[Text Properties]*/
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+            font-weight: normal;
+            text-align: center;
+        }
+        #Landing-Page_Banner_Logo{                                                              /*[ID: Landing Page Banner Logo]*/
+            /*[Text Properties]*/
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+            font-weight: bold;
+            text-align: right;
+            /*[Image Properties]*/
+            display: block;
+            width: 400px;
+            object-fit: cover;
+            margin-left: auto;
+            margin-right: 100px;
+        }
+
+/*==================================================================================================================================*/
+/*[CONTENT HEADERS]*/
+
+        .Header_Large{                                                                          /*[Header Large: Style]*/
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50px;
+        }
+
+        .Header_Small{                                                                          /*[Header Small: Style]*/
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+        }
+
+        .p1{                                                                                    /*[Paragraph 1: Style]*/
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+        }
+
+        .Logo_Small{                                                                            /*[Logo: Style]*/
+            display: block;
+            width: 400px;
+            object-fit: cover;
+                margin-left: auto;
+                margin-right: 100px;
+        }
+
+/*==================================================================================================================================*/
+/*[GRID CONTENT]*/
+
+        .Container-3col{
+            /*[Color Properties]*/
+            color: black;
+            /*[Positioning Properties]*/
+            display: flex;
+            margin-right: 100px;
+            margin-left: 100px;
+            gap: 100px;
+        }
+
+        .Text-3col{
+            /*[Positioning Properties]*/
+            flex: 1;
+            /*[Box Properties]*/
+            min-height: 150px;
+            width: 100px;
+        }
+
+        .Img-3col{
+            /*[Positioning Properties]*/
+            display: inline;
+            /*[Image Properties]*/
+            height: 200px;
+
+        }
+
+        .Text_Column-2{
+            flex: 1;
+        }
+
+        .Text_Column-3{
+            flex: 1;
+        }
+
+
+/*==================================================================================================================================*/
+/*[TABLES]*/
+
+        .Button_Default {                                                                       /*[Button: Style]*/
+            
+            top:50%;
+            background-color:#555364;
+            color: #fff;
+            border:none; 
+            border-radius:10px; 
+            padding:15px;
+            min-height:30px; 
+            min-width: 120px;
+          }
+
+        .Book_Thumbnail {                                                                       /*[Book Thumbnail: Style]*/
+            height: 70px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            object-fit: contain;
+        }
+
+        .Book_Thumbnail:hover {                                                                 /*[Book Thumbnail: Hover]*/
+            box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+        }
+        #Top-Rated_Books {                                                                      /*[Top-Rated Books: Table Style]*/
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            
+        }
+
+            #Top-Rated_Books tr:nth-child(even){background-color: #f2f2f2;}
+            #Top-Rated_Books tr:hover {background-color: #ddd;}
+
+        #Top-Rated_Books th {                                                                   /*[Top-Rated Books: Table Header]*/
+            height: 50px;
+            border: 1px solid #ddd;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+            vertical-align: text-top;
+            background-color: #555364;
+            color: white;
+        }
+        #Top-Rated_Books td {                                                                   /*[Top-Rated Books: Table Data]*/
+            border: 1px solid #ddd;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+        }
+
+/*==================================================================================================================================*/
